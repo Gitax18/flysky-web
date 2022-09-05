@@ -118,11 +118,8 @@ def createticket(airline, name, fromdest, todest, date, time, fclass,filename):
     pdf.text(10,50, txt='FROM: {}'.format(fromdest))
     pdf.text(100, 50, txt='TO: {}'.format(todest))
     pdf.set_font('ARIAL','',15)
-<<<<<<< HEAD:Booking-app/bookingapp.py
     pdf.text(10, 60, txt='{} '.format(name))
-=======
     pdf.text(10, 60, txt='{}'.format(name))
->>>>>>> 4b3e9d8ee696ab2ac0ba8d1f2b20af68e33aae8c:bookingapp.py
     pdf.text(10,70,txt='Date: {}'.format(date))
     pdf.text(60,70, txt='Time: {}'.format(time))
     pdf.text(110,70, txt='Class: {}'.format(fclass))
